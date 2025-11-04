@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
-import styles from "./AuthTabs.module.css";
+
 import { useNavigate } from "react-router-dom";
-import { CONFIG } from "../utils/constants";
-import { useAuth } from "../hooks/useAuth";
+
+import styles from "./AuthTabs.module.css";
 import { authApi } from "../api/authApi";
+import { useAuth } from "../hooks/useAuth";
+import { CONFIG } from "../utils/constants";
 
 export const AuthTabs = () => {
   const [activeTab, setActiveTab] = useState<"login" | "register">("login");

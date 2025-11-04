@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import { CONFIG } from "../utils/constants";
 
 // Создаем экземпляр axios с перехватчиком ошибок

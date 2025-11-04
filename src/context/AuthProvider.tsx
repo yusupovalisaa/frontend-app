@@ -1,7 +1,8 @@
 import React, { useState, ReactNode } from "react";
+
+import { AuthContext } from "./auth"; // Импортируйте из auth.ts
 import { authApi } from "../api/authApi";
 import { User } from "../types/auth";
-import { AuthContext } from "./auth"; // Импортируйте из auth.ts
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User>(null);
