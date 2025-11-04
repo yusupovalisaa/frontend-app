@@ -1,0 +1,139 @@
+.authWrapper {
+  display: flex;
+  justify-content: center;      /* горизонтальное центрирование */
+  align-items: center;          /* вертикальное центрирование */
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+}
+
+.authCard {
+  width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(210, 210, 210);
+  transform: translateY(-20%);  /* сдвигаем блок немного вверх */
+}
+
+
+/* Вкладки */
+.tabsContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.tabActive {
+  background-color: #000;
+  color: white;
+}
+
+.tabInactive {
+  background-color: #eee;
+  color: #000;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* вертикально */
+  gap: 15px;              /* расстояние между полями */
+  width: 380px;            /* чтобы поля занимали всю ширину контейнера */
+}
+
+.inputField,
+.selectField {
+  width: 400px;       /* занимает всю ширину родителя */
+  height: 40px;      /* одинаковая высота */
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* чтобы padding не ломал ширину */
+}
+
+.authButton {
+  width: 400px;           /* кнопка занимает всю ширину родителя */
+  height: 40px;          /* фиксированная высота */
+  background-color: #000;  /* основной цвет */
+  color: #fff;           /* текст белый */
+  border: none;          /* убираем стандартную рамку */
+  border-radius: 8px;    /* закругленные углы */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.authButton {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0px 0px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; /* убирает подчёркивание у <a> */
+}
+
+.authButton:hover {
+  background-color: #333;
+}
+
+
+.authInput,
+.authSelect,
+.otpInput {
+  width: 100%;           /* одинаковая ширина для всех */
+  height: 40px;          /* фиксированная высота */
+  padding: 0 10px;       /* отступ внутри поля */
+  margin-bottom: 10px;   /* расстояние между полями */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* чтобы padding не увеличивал ширину */
+}
+
+.otpContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.otpInput {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+/* OTP-код */
+.otpContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.telegramMessage {
+  font-size: 14px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+
